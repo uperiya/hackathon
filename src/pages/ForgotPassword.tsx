@@ -63,9 +63,12 @@ export const ForgotPassword: React.FC = () => {
               <h3 className="text-base font-bold text-slate-900 dark:text-white">
                 Reset Link Dispatched
               </h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                 {sentMessage}
               </p>
+              <div className="p-3 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 rounded-xl text-left text-xs text-amber-800 dark:text-amber-300">
+                <span className="font-semibold">Note:</span> Automated Firebase emails frequently arrive in your <strong>Spam / Junk</strong> folder or <strong>Promotions</strong> tab. Search for emails from <code className="px-1 py-0.5 rounded bg-amber-100 dark:bg-amber-900/60 font-mono">noreply@odoo-hackathon-772dd.firebaseapp.com</code>.
+              </div>
               <Link to="/login">
                 <Button variant="primary" className="w-full mt-4" size="md">
                   Return to Login
